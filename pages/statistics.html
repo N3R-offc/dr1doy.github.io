@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Статистические данные — Деловой этикет секретаря</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="hero-splash hero-splash--strip" aria-label="Заголовок сайта">
+    <div class="hero-splash__bg" aria-hidden="true"></div>
+    <div class="hero-splash__content">
+      <div class="hero-splash__title-box">
+        <h1 class="hero-splash__title">Деловой этикет секретаря руководителя в современной организации</h1>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Основная навигация">
+    <div class="site-nav__inner">
+      <button class="site-nav__toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="../index.html">Главная</a></li>
+        <li><a class="site-nav__link" href="about.html">О нас</a></li>
+        <li><a class="site-nav__link" href="etiquette.html">Основы этикета</a></li>
+        
+        <li><a class="site-nav__link site-nav__link--active" href="statistics.html">Статистика</a></li>
+        
+        <li><a class="site-nav__link" href="violations.html">Советы</a></li>
+        <li><a class="site-nav__link" href="phrases.html">Полезные фразы</a></li>
+        <li><a class="site-nav__link" href="pages/glossary.html">Глоссарий</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <h2 class="page-title">Статистика нарушений делового этикета</h2>
+
+    <section class="content-block" id="infographic">
+      <h2>Инфографика нарушений</h2>
+      <p>Распределение зафиксированных нарушений по категориям (условные данные на основе опроса 120 секретарей):</p>
+      <div class="infographic-bar" role="img" aria-label="Диаграмма распределения нарушений">
+        <div class="infographic-item">
+          <span class="infographic-item__label">Телефонный этикет</span>
+          <div class="infographic-item__track">
+            <div class="infographic-item__fill" data-width="22%"></div>
+          </div>
+          <span class="infographic-item__value">22%</span>
+        </div>
+        <div class="infographic-item">
+          <span class="infographic-item__label">Деловая переписка</span>
+          <div class="infographic-item__track">
+            <div class="infographic-item__fill" data-width="18%"></div>
+          </div>
+          <span class="infographic-item__value">18%</span>
+        </div>
+        <div class="infographic-item">
+          <span class="infographic-item__label">Приём посетителей</span>
+          <div class="infographic-item__track">
+            <div class="infographic-item__fill" data-width="15%"></div>
+          </div>
+          <span class="infographic-item__value">15%</span>
+        </div>
+        <div class="infographic-item">
+          <span class="infographic-item__label">Дресс-код</span>
+          <div class="infographic-item__track">
+            <div class="infographic-item__fill" data-width="12%"></div>
+          </div>
+          <span class="infographic-item__value">12%</span>
+        </div>
+        <div class="infographic-item">
+          <span class="infographic-item__label">Тайм-менеджмент</span>
+          <div class="infographic-item__track">
+            <div class="infographic-item__fill" data-width="14%"></div>
+          </div>
+          <span class="infographic-item__value">14%</span>
+        </div>
+        <div class="infographic-item">
+          <span class="infographic-item__label">Цифровая грамотность</span>
+          <div class="infographic-item__track">
+            <div class="infographic-item__fill" data-width="11%"></div>
+          </div>
+          <span class="infographic-item__value">11%</span>
+        </div>
+        <div class="infographic-item">
+          <span class="infographic-item__label">Культурные ошибки</span>
+          <div class="infographic-item__track">
+            <div class="infographic-item__fill" data-width="8%"></div>
+          </div>
+          <span class="infographic-item__value">8%</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="charts">
+      <h2 class="page-title" style="font-size: 1.35rem; margin-top: 1rem;">Процентное соотношение проблем</h2>
+      <div class="stats-grid">
+        <div class="chart-card">
+          <h3>Доля нарушений по категориям</h3>
+          <canvas id="violationsPieChart" aria-label="Круговая диаграмма нарушений"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block" id="examples">
+      <h2>Примеры типичных ошибок</h2>
+      <div class="error-examples">
+        <div class="error-example">
+          <p class="error-example__title">Телефон</p>
+          <p class="error-example__text">«Алло, подождите…» — без представления и извинения за задержку ответа.</p>
+        </div>
+        <div class="error-example">
+          <p class="error-example__title">Переписка</p>
+          <p class="error-example__text">Письмо с названием «Документ1_финальный_новый.docx» и отсутствием конкретного запроса в тексте.</p>
+        </div>
+        <div class="error-example">
+          <p class="error-example__title">Приём гостей</p>
+          <p class="error-example__text">Посетитель ждёт 20 минут стоя, секретарь не предложил место и воду.</p>
+        </div>
+        <div class="error-example">
+          <p class="error-example__title">Дресс-код</p>
+          <p class="error-example__text">Спортивная обувь и джинсы на официальной встрече с партнёрами.</p>
+        </div>
+        <div class="error-example">
+          <p class="error-example__title">Тайм-менеджмент</p>
+          <p class="error-example__text">Два совещания назначены на одно время — конфликт в календаре руководителя.</p>
+        </div>
+        <div class="error-example">
+          <p class="error-example__title">Цифровая грамотность</p>
+          <p class="error-example__text">Конфиденциальный документ отправлен не тому адресату из-за автозаполнения.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__copy">Деловой этикет секретаря руководителя в современной организации © 2026</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
